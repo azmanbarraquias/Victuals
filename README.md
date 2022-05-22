@@ -1,2 +1,2 @@
 # Victuals
-  A elearning and educational quiz game about cooking, baking, and mixing food recipe.
+  A E-Learning and educational quiz game about cooking, baking, and mixing food recipe.
