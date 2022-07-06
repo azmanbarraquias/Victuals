@@ -10,6 +10,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace MaterialUI
 {
@@ -42,8 +43,7 @@ namespace MaterialUI
 		[SerializeField] private Image checkImage;
 		[HideInInspector]
 		[SerializeField] private Image frameImage;
-		[HideInInspector]
-		[SerializeField] private Text text;
+		[SerializeField] private TextMeshProUGUI text;
 
 		private RectTransform checkRectTransform;
 		private CanvasGroup frameCanvasGroup;
@@ -292,7 +292,11 @@ namespace MaterialUI
 				}
 
 				if (changeRippleColor)
-					rippleConfig.rippleColor = frameImage.color;
+                    if (rippleConfig != null)
+                    {
+						rippleConfig.rippleColor = frameImage.color;
+					}
+				return;
 			}
 		}
 	}

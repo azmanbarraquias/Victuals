@@ -26,6 +26,9 @@ public class PlayerMainMenu : MonoBehaviour
 
     public Image profileImage;
 
+    public Image avatarSelection;
+
+
     public Image profileGenderImage;
 
     public Sprite[] profileImageSprites;
@@ -103,6 +106,7 @@ public class PlayerMainMenu : MonoBehaviour
     public void SelectUserProfileID(int id)
     {
         profileID = id;
+        avatarSelection.sprite = profileImageSprites[id];
     }
 
     public void SelectUserGender(bool gender)
